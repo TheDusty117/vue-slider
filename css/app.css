@@ -3,6 +3,7 @@ body{
   background-image: url(../img/ancient\ map\ travel.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  color: white;
 }
 
 .slide img {

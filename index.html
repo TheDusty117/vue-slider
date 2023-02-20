@@ -19,8 +19,10 @@
 
       <div class="carousel" id="carousel">
 
-        <div v-for="object in slideArrObjects">
-          {{object}}
+        <div v-for="(img,title,desc) in slideArrObjects" class="slide active">
+          <img src="{{img}}" alt="">
+          {{title}}
+          {{desc}}
         </div>
 
 
