@@ -31,8 +31,9 @@ const { createApp } = Vue
             description: 'Gli astri danzano nella notte Africana'
           }
         ],
-        
-
       }
+    },
+    methods:{
+      
     }
   }).mount('#carousel')
