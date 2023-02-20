@@ -52,6 +52,31 @@ const { createApp } = Vue
 
 
 
+
+
+
+
+
+
+
+  const slideElements = document.getElementsByClassName('slide') //prendo tutti gli elementi con classe slide.
+
+  
+  
+  
+  
+  
+  
+  
+  //VERSIONE ON CLICK DELLO SCORRIMENTO DELLE SLIDE
+  
+  slideElements[0].classList.add('active')
+  
+  
+  const leftBtnElement = document.getElementById('arrow-left')
+  
+  const rightBtnElement = document.getElementById('arrow-right')
+  
   console.log(slideElements)
   console.log(leftBtnElement, rightBtnElement)
   
