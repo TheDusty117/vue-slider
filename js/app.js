@@ -6,7 +6,7 @@ const { createApp } = Vue
         //array di oggetti
         slideArrObjects : [
           {
-            sourceImg: '<img src="./img/image1.0.jpg">',
+            sourceImg: './img/image1.0.jpg',
             title: 'Fiume Vietnamita',
             description: 'Una bellissima alba sul fiume Mekong'
           },

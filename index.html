@@ -19,8 +19,10 @@
 
       <div class="carousel" id="carousel">
 
-        <div v-for="key,value in slideArrObjects">
-          
+        <div class="slide active" v-for="object in slideArrObjects">
+          <img :src="object.sourceImg" alt="">
+          <h1>{{object.title}}</h1>
+          <p>{{object.description}}</p>
         </div>
 
 
@@ -31,14 +33,14 @@
 
 
         <!-- freccia SINISTRA -->
-        <!-- <div id="arrow-left" class="carousel-arrow arrow-left">
+        <div id="arrow-left" class="carousel-arrow arrow-left">
           <i class="fa-solid fa-circle-chevron-left"></i>
-        </div> -->
+        </div>
 
         <!-- freccia DESTRA -->
-        <!-- <div id="arrow-right" class="carousel-arrow arrow-right">
+        <div id="arrow-right" class="carousel-arrow arrow-right">
           <i class="fa-solid fa-circle-chevron-right"></i>
-        </div> -->
+        </div>
 
         
 
