@@ -1,0 +1,81 @@
+body{
+  background-color: rgb(87, 34, 34);
+  background-image: url(../img/ancient\ map\ travel.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slide img {
+	width: 100%;
+	aspect-ratio: 16/9;
+	object-fit: cover;
+	object-position: center;
+}
+
+img{
+  border-radius: 30px;
+  border: 10px solid black;
+}
+
+.slide.active {
+	display: block;
+}
+
+.slide {
+	display: none;
+}
+
+.carousel {
+	position: relative;
+}
+
+.carousel .carousel-arrow {
+	position: absolute;
+	font-size: 40px;
+	color: white;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.carousel .carousel-arrow.arrow-left {
+	left: 20px;
+}
+
+.carousel .carousel-arrow.arrow-right {
+	right: 20px;
+}
+
+#arrow-mid{
+  position: absolute;
+  font: 60px;
+  color: greenyellow;
+  top: 50%;
+  right: 40%;
+  transform: translateX(-50%);
+}
+
+#arrow-mid-reverse{
+  position: absolute;
+  font: 60px;
+  color: tomato;
+  top: 50%;
+  left: 40%;
+  transform: translateX(-50%);
+}
+
+.main-title{
+  margin-top: 20px;
+  padding: 20px;
+  background-color: brown;
+  border: 2px solid black;
+  border-radius: 100px;
+  color: white;
+}
+
+.pic-description{
+  padding: 20px;
+  background-color: brown;
+  border: 2px solid black;
+  border-radius: 100px;
+  color: white;
+}
