@@ -34,7 +34,7 @@ const { createApp } = Vue
 
         currentIndex: 0,
 
-        lastIndex: 5,
+        rewindright: 0,
 
       }
     },
@@ -44,15 +44,25 @@ const { createApp } = Vue
     methods:{
 
       nextIndex(){
-        if (this.currentIndex < 4){
-          this.currentIndex++
+        this.currentIndex++
+        if (this.currentIndex > 4){
+          this.currentIndex = 0
         }
       },
 
       prevIndex(){
-        if (this.currentIndex > 0){
-          this.currentIndex--
+        this.currentIndex--
+        if (this.currentIndex < 0){
+          this.currentIndex = 4
         }
+      },
+
+      goAutoForward(){
+
+      },
+
+      goAutoBackwards(){
+
       },
 
     }
