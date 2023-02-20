@@ -35,10 +35,13 @@ const { createApp } = Vue
         currentIndex: 0,
 
         rewindright: 0,
+        
 
       }
     },
 
+
+    
 
     //METODI FUNZIONI
     methods:{
@@ -56,9 +59,10 @@ const { createApp } = Vue
           this.currentIndex = 4
         }
       },
+      
 
       goAutoForward(){
-
+        
       },
 
       goAutoBackwards(){
