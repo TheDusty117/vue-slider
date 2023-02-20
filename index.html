@@ -19,10 +19,10 @@
 
       <div class="carousel" id="carousel">
 
-        <div class="slide active" v-for="object in slideArrObjects">
+        <div :class="{'active' : true}" class="slide" v-for="object in slideArrObjects">
           <img :src="object.sourceImg" alt="">
-          <h1>{{object.title}}</h1>
-          <p>{{object.description}}</p>
+          <h2 class="main-title">{{object.title}}</h1>
+          <p class="pic-description">{{object.description}}</p>
         </div>
 
 
