@@ -18,7 +18,7 @@
 
 
       <div class="carousel" id="carousel">
-
+        <!--v-bind su :class, se index === currentindex(0) allora metti stringa active altrimenti : stringa vuota -->
         <div :class=" index === currentIndex ? 'active' : '' " class="slide" v-for="(object,index) in slideArrObjects">
           <img :src="object.sourceImg" alt="">
           <h2 class="main-title">{{object.title}}</h1>

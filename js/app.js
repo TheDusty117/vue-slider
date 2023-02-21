@@ -47,30 +47,26 @@ const { createApp } = Vue
     methods:{
 
       nextIndex(){
+        const lastIndex = this.slideArrObjects.length - 1
         this.currentIndex++
-        if (this.currentIndex > 4){
+        if (this.currentIndex > lastIndex){
           this.currentIndex = 0
         }
       },
 
       prevIndex(){
+        const lastIndex = this.slideArrObjects.length - 1
         this.currentIndex--
         if (this.currentIndex < 0){
-          this.currentIndex = 4
+          this.currentIndex = lastIndex
         }
       },
-      
-
-      goAutoForward(){
-        
-      },
-
-      goAutoBackwards(){
-
-      },
-
+    
     }
+    
   }).mount('#carousel')
+
+
 
 
 
