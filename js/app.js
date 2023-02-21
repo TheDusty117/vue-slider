@@ -62,6 +62,12 @@ const { createApp } = Vue
         }
       },
     
+    },
+
+    //AUTOPLAY with MOUNTED HOOK
+    mounted(){
+      console.log('MOUNTED')
+      this.autoplay = setInterval(this.nextIndex, 3000)
     }
     
   }).mount('#carousel')
